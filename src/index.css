@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Authentic Ethiopian Natural Tones Palette */
+    --brand-green: #1C462C;
+    --brand-green-hover: #143320;
+    --brand-soil: #7A4B29;
+    --brand-clay: #B94726;
+    --brand-gold: #DF9F28;
+    --brand-gold-light: #FBF4E4;
+    --brand-neutral: #FAF7F0;
+    --brand-ink: #1F1D1B;
+    --brand-border: #DFD9CE;
+    --brand-dark-forest: #142318;
+
+    /* Theme Mappings */
+    --color-forest: #1C462C;
+    --color-forest-dark: #142318;
+    --color-soil: #7A4B29;
+    --color-clay: #B94726;
+    --color-gold: #DF9F28;
+    --color-basalt: #1F1D1B;
+    --color-parchment: #FAF7F0;
+    --color-sand: #F3EFE6;
+    --color-border: #DFD9CE;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Ethiopic', 'Abyssinica SIL', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--brand-neutral);
+    color: var(--brand-ink);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, .font-serif-title {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  }
+}
+
+/* Authentic Ethiopian Netela / Tibeb Woven Border */
+.tibeb-border {
+  border-left: 5px solid transparent;
+  border-image: repeating-linear-gradient(135deg, 
+    #1C462C 0, #1C462C 6px, 
+    #DF9F28 6px, #DF9F28 10px, 
+    #B94726 10px, #B94726 16px,
+    #FAF7F0 16px, #FAF7F0 18px) 1;
+}
+
+/* Polished Ethiopian Card with woven edge accent */
+.ethiopic-card {
+  background: #FFFFFF;
+  border: 1px solid var(--brand-border);
+  box-shadow: 0 1px 3px rgba(31, 29, 27, 0.04), 0 4px 12px rgba(31, 29, 27, 0.02);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Polished KPI Card with top Tibeb hint and bottom forest indicator */
+.kpi-card {
+  background: #FFFFFF;
+  border: 1px solid var(--brand-border);
+  border-bottom: 3px solid var(--brand-green);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+}
+.kpi-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(28, 70, 44, 0.08);
+  border-color: #CFC7B9;
+}
+
+/* Ethiopian Status Chip with subtle gold/forest borders */
+.status-chip {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Primary Ethiopian Action Button */
+.btn-primary {
+  background: var(--brand-green);
+  color: #FAF7F0;
+  border-radius: 8px;
+  border: 1px solid rgba(223, 159, 40, 0.3);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.btn-primary:hover {
+  background: var(--brand-green-hover);
+  box-shadow: 0 3px 8px rgba(28, 70, 44, 0.25);
+  border-color: var(--brand-gold);
+}
+
+/* Secondary Button with warm parchment tone */
+.btn-secondary {
+  background: #FFFFFF;
+  color: var(--brand-ink);
+  border: 1px solid var(--brand-border);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.15s ease-in-out;
+}
+.btn-secondary:hover {
+  background: #F3EFE6;
+  border-color: #CFC7B9;
+}
+
+/* Subtle Mesob Basket Weave Pattern */
+.bg-mesob-pattern {
+  background-color: var(--brand-neutral);
+  background-image: 
+    radial-gradient(var(--brand-green) 0.65px, transparent 0.65px), 
+    radial-gradient(var(--brand-gold) 0.65px, var(--brand-neutral) 0.65px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/* Custom Ethiopian Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #CFC7B9;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A89F8E;
+}
+

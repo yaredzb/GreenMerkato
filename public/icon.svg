@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142C22" />
+      <stop offset="100%" stop-color="#1A3D2F" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5B232" />
+      <stop offset="100%" stop-color="#C29212" />
+    </linearGradient>
+    <linearGradient id="terraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D86B43" />
+      <stop offset="100%" stop-color="#B2533E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)" />
+
+  <!-- Subtle Mesob / Woven Geometric Ring (Circularity Motif) -->
+  <g transform="translate(256, 256)">
+    <!-- Outer Woven Geometric Star / Diamond Ring -->
+    <circle r="180" fill="none" stroke="#2D5844" stroke-width="3" stroke-dasharray="12 8" opacity="0.6" />
+    <circle r="140" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-dasharray="8 6" opacity="0.75" />
+    
+    <!-- Organic Compost & Market Circulation - Geometric Petals / Craft Nodes -->
+    <path d="M 0 -130 L 32 -60 L 110 -60 L 50 -10 L 80 65 L 0 25 L -80 65 L -50 -10 L -110 -60 L -32 -60 Z"
+          fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-linejoin="round" />
+
+    <!-- Central Diamond & Seed / Compost Soil Core -->
+    <polygon points="0,-72 72,0 0,72 -72,0" fill="url(#terraGrad)" />
+    
+    <!-- Central Germination / Circularity Core -->
+    <polygon points="0,-42 42,0 0,42 -42,0" fill="#F8F6F0" opacity="0.95" />
+    <circle r="18" fill="#1A3D2F" />
+    <circle r="8" fill="url(#goldGrad)" />
+
+    <!-- 4 Cardinal Nodes (North, East, South, West: Vendor, Collect, Compost, Farmer) -->
+    <circle cx="0" cy="-140" r="10" fill="#E5B232" />
+    <circle cx="140" cy="0" r="10" fill="#D86B43" />
+    <circle cx="0" cy="140" r="10" fill="#E5B232" />
+    <circle cx="-140" cy="0" r="10" fill="#D86B43" />
+  </g>
+</svg>
